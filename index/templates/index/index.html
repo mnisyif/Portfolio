@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta anme ="viewport" content = "width=device-width, initial-scale = 1.0">
+        <title>
+            Murtadha's Page
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAKLSFpVbEBog43gvNhfroj +BmwXdxFgVK/KVC=" crossorigin="anonymous" />
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <img src = "{% static '/index/images/logo.png' %}" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#aboutMe" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#myProjects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#myRes" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="#myBlog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#contactMe" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">Hi, I am <strong>Murtadha Nisyif</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">Aspiring Computer Engineer</p>
+            <img src = "{% static 'index/images/profile.png' %}" alt="picture of mine">
+        </section>
+        
+        <!-- About me -->
+        <section class="about-me" id="aboutMe">
+            <h2 class="section__title section__title--about">Who am I</h2>
+            <p class="section__subtitle section__subtitle-about"></p>
+            
+            <div class="about-me__body">
+                <p>
+                    Ever since I was a child, I had a natural curiosity for how things work. I would dismantle a toy that my father would buy me and challenge myself to assemble it again. By the age of 8, I learned about the router and the capabilities it brings with it. Growing up, I realized that I must explore deeper into the electronics and semi-conductors world.
+                </p>
+                <p>
+                    Today, I am walking a path exploring what I was fantasizing about as a child, studying the fundamentals of electronics, digital logic, and circuits as a computer engineering student and the University of Guelph.
+                </p>
+                <p>
+                    I participated in FRC 2017 and 2018 as part of the REBELS 2702 team. I participated in the Ontario Skills competition for robotics in 2018.
+                </p>
+                <p>
+                    I worked as an IT analyst at Sanctuary Refugee Health Center. I was responsible for an improvement plan for the electronics equipment while saving 15% of the budget.
+                </p>
+                <p>
+                    I spend some time with family and on personal projects to expand my knowledge in VHDL, digital logic, and CAD programs, like Solidworks.
+                </p>
+            
+            </div>
+
+            <img src = "{% static 'index/images/coolPic.png' %}" alt="cool Pic of me standing">
+        </section>
+
+        <!-- Projects -->
+        <section class="my-work" id="myProjects">
+            <h2 class="section__title"> My Projects</h2>
+            <p class="section__subtitle"></p>
+
+            <div class="portfolio">
+                
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section class="about-me" id="aboutMe">
+
+        </section>
+
+        <!-- Blog -->
+        <section class="about-me" id="aboutMe">
+
+        </section>
+        
+        <!-- Contact Info -->
+        <section class="about-me" id="aboutMe">
+
+        </section>
+    </body>
+
+</html>
